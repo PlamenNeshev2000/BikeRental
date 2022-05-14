@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_map"
+        android:icon="@drawable/ic_map_pin"
+        android:title="Maps"
+        app:cnb_iconColor="@color/home"
+        />
+    <item
+        android:id="@+id/action_home"
+        android:icon="@drawable/ic_home"
+        android:enabled="true"
+        android:title="Home"
+        app:cnb_iconColor="@color/home" />
+    <item
+        android:id="@+id/action_profile"
+        android:icon="@drawable/ic_user"
+        android:title="Profile"
+        app:cnb_iconColor="@color/home" />
+
+</menu>

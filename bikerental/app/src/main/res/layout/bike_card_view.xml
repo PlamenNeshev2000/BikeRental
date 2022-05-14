@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:weightSum="11"
+        android:background="@drawable/bg_layout"
+        android:backgroundTint="#F4F4F4"
+        android:id="@+id/bike_view_root"
+        android:outlineSpotShadowColor="@color/cardview_shadow_end_color"
+        android:clipToOutline="true"
+        android:layout_marginVertical="5sp"
+        android:gravity="center">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:layout_weight="10"
+            >
+            <ImageView
+                android:id="@+id/bike_img"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/bg_layout"
+                android:clipToOutline="true"
+                android:scaleType="centerCrop"
+                android:src="@raw/bike_large"
+                android:layout_marginRight="30dp"
+                android:contentDescription="Bike image"></ImageView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                >
+            <TextView
+                android:id="@+id/bike_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bike name"
+                android:textSize="24dp"
+                android:textColor="#000"
+                />
+            <TextView
+                android:id="@+id/bike_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Status"
+                android:textSize="16dp"
+                android:textColor="#FF919191"
+                />
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="20sp"
+            android:src="@drawable/ic_chevron_right" />
+
+
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>

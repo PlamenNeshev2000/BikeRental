@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Linear Layout with vertical orientation and other properties -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http:// schemas.android.com/apk/res-auto"
+    xmlns:tools="http:// schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context=".RegistrationActivity"
+    android:background="@drawable/background">
+
+    <!-- TextView for heading -->
+
+    <!-- Edit text for email -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:layout_marginBottom="30dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2">
+        <EditText
+            android:id="@+id/first_name"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="First Name"
+            android:layout_weight="1"
+            android:background="@drawable/custom_input"
+            android:drawableStart="@drawable/custom_person_icon"
+            android:drawablePadding="12dp"
+
+            />
+
+        <EditText
+            android:id="@+id/last_name"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Last Name"
+            android:layout_weight="1"
+            android:background="@drawable/custom_input"
+            android:drawableStart="@drawable/custom_person_icon"
+            android:drawablePadding="12dp"
+            />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Enter your Email"
+        android:drawablePadding="12dp"
+        android:drawableStart="@drawable/custom_email_icon"
+        android:background="@drawable/custom_input"/>
+
+    <!-- Edit text for password -->
+    <EditText
+        android:id="@+id/passwd"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Enter your Password"
+        android:inputType="textPassword"
+        android:drawablePadding="12dp"
+        android:drawableStart="@drawable/custom_lock_icon"
+        android:background="@drawable/custom_input"/>
+
+    <!-- Button for register with text "Register" -->
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register" />
+
+    <!-- ProgressBar for loading time -->
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/btn_login_instead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Or login"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:layout_marginTop="50dp"
+        android:textColor="#FF006EFF"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+</LinearLayout>
